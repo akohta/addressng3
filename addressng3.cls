@@ -10,6 +10,8 @@
 \usepackage{bxpapersize}
 \usepackage{type1cm}
 
+\pagestyle{empty}
+
 %define constant
 \newcounter{chv} 
 \newcounter{cvv}
