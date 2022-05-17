@@ -8,4 +8,4 @@ Please use this as a reference to set a paper size and to set a position of text
   3. print example.pdf 
 
 
-2022/05/17 Added display options to display the position (area) of the text. Embedded a japanese font in the example.pdf. 
+2022/05/17 Added display options to display the position (area) of the text.
