@@ -4,19 +4,26 @@
 % to display the print position (area), comment out the followings.
 %\paperperimetertrue  % paper perimeter
 %\postcodetrue        % postcode
-%\addressatrue        % address A
-%\addressbtrue        % address B
+%\addresstrue         % address 
 %\nametrue            % name
+%\notestrue           % notes
 %\spostcodetrue       % sender's postcode
-%\saddressatrue       % sender's address A
-%\saddressbtrue       % sender's address B
+%\saddresstrue        % sender's address 
 %\snametrue           % sender's name
 
 
 \begin{document}
-\addreceiveraddress{名字}{名前}{様}{1234567}{一○○県○○市○○町○○ー○○}{＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊}
+% Usage
+% \addreceiveraddress{name1}{name2}{notes}{postcode}{address1}{address2}
+% \addsenderaddress{family name}{given name}{postcode}{address1}{address2}
 
-\addreceiveraddress{}{△△}{御中}{7654321}{二○○県○○市○○町○○ー○○}{＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊}
+% examples 
+\addreceiveraddress{＊＊＊＊会社　＊＊＊＊部}{　　　　　　　＊＊＊＊　御中}{\textcolor{red}{\fbox{＊＊＊＊書在中}}}
+{7654321}{○○県○○市○○町○○ー○○}{＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊}
 
-\addsenderaddress{名字}{名前}{1234567}{○○県○○市○○町○○ー○○}{}
+\addreceiveraddress{名字　名前　様}{}{}{1234567}{○○県○○市○○町○○ー○○}{＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊}
+
+\addreceiveraddress{名字　名前１　様}{　　　名前２　様}{}{1234567}{○○県○○市○○町○○ー○○}{＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊}
+
+\addsenderaddress{名字}{名前}{1234567}{○○県○○市○○町○○ー○○}{＊＊＊＊＊＊＊＊＊}
 \end{document}
