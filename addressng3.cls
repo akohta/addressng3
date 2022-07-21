@@ -86,16 +86,16 @@
 
 		% -- for postcode position check --
 		\ifpostcode
-			\put( 65.0,223.0){\line(1,0){47.7}}
-			\put( 65.0,215.0){\line(1,0){47.7}}
-			\put( 65.0,215.0){\line(0,1){ 8.0}}
-			\put(112.7,215.0){\line(0,1){ 8.0}}
-			\put( 70.7,215.0){\line(0,1){ 8.0}}
-			\put(107.0,215.0){\line(0,1){ 8.0}}
+			\put( 63.0,223.0){\line(1,0){47.7}}
+			\put( 63.0,215.0){\line(1,0){47.7}}
+			\put( 63.0,215.0){\line(0,1){ 8.0}}
+			\put(110.7,215.0){\line(0,1){ 8.0}}
+			\put( 68.7,215.0){\line(0,1){ 8.0}}
+			\put(105.0,215.0){\line(0,1){ 8.0}}
 		\fi
 		% -- end postcode position check --
 		% postcode 
-		\put(64.0,223){ % 1.0mm shift for half size number centering
+		\put(62.0,223){ % 1.0mm shift for half size number centering
 			\vtop to 8.0truemm{\fontsize{6mm}{0pt}\selectfont\vfil
 				\parbox{5.7truemm}{\hfil\StrChar{#4}{1}\hfil}\hskip1.3truemm
 				\parbox{5.7truemm}{\hfil\StrChar{#4}{2}\hfil}\hskip1.3truemm
@@ -178,7 +178,7 @@
 		% notes
 		\put(15,195){
 			\vtop to 165truemm{\fontsize{6mm}{0pt}\selectfont\vfil
-				\parbox<t>{165truemm}{\hfill#3}
+				\parbox<t>{165truemm}{\hfill\textcolor{red}{#3}}
 			\vfil}
 		}	
 
